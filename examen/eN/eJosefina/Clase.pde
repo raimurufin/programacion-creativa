@@ -134,6 +134,7 @@ class Clase {
 		rect((width / 2) + 455, 685, 4, 10);
 	}
 	//Visualización del día
+    // Falta una guía que ayude a saber los rangos de los valores
 	void dia() {
 		textSize(30);
 		fill(colores[10]);
