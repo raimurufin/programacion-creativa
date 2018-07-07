@@ -24,7 +24,7 @@ Para los rocíos se muestra una ellipses oscura que simboliza los puntos máximo
 Se demuestra las variaciones de las velocidades del viento con los anchos de los rectángulos, mientras más anchos más velocidad del viento había y viceversa. 
 
 
-En la visualización Mensual solo hay interacción con las flechas derecha e izquierda para poder pasar de mes en mes.
+En la visualización mensual solo hay interacción con las flechas derecha e izquierda para poder pasar de mes en mes.
 
 Se muestra las temperaturas dibujando líneas según si son máximas o mínimas.
 
@@ -33,3 +33,4 @@ Estas ellipses muestran las variaciones de humedad según el mes.
 Las velocidades del viento se representan con pelotitas que se mueven en distintas velocidades según su valor de velocidad del viento.
 
 Finalmente se muestran ellipses con una línea que apunta a las direcciones del viento correspondientes. 
+
