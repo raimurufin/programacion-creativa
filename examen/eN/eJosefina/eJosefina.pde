@@ -1,5 +1,5 @@
 /*Universidad del Desarrollo - Facultad de Diseño - Examen - Josefina Hidalgo T
-El examen consiste en tres niveles de visualización diferentes, la navegación 
+El examen consiste en tres niveles de visualización diferentes, la navegación
 entre ellas se realiza mediante las teclas  ‘1’, ‘2’ , ‘3’ correspondiendo a una
 visualización anual, mensual y diaria respectivamente.
 Al acceder a la visualización anual mediante la tecla ‘1’ se muestra el año

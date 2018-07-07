@@ -2,59 +2,59 @@
  Josefa Méndez Gómez
  Examen programación Creativa
  05 / 07 / 2018
- 
+
  Teclado:
- 
+
  1 Visualización Anual   ||   2 Visualización Semestral   ||   3 Visualización mensual
- 
- t = Temperaturas || r = Rocíos máx y mín || v = Velocidad del viento || f  = Fechas anuales 
+
+ t = Temperaturas || r = Rocíos máx y mín || v = Velocidad del viento || f  = Fechas anuales
  iniciando por enero a las 12 en sentido a las manecillas del reloj.
- 
+
  Se presenta una visualización interactiva de la ciudad de Tromson en Noruega durante el año
  2015. Al iniciar el programa se presenta una visualización anual de las temperaturas mínimas
  y máximas que se puede activar y desactivar con la tecla "t".  Los datos exteriores del anillo
- pertenecen a las temperaturas máximas de cada día mientras que los datos interiores son las 
+ pertenecen a las temperaturas máximas de cada día mientras que los datos interiores son las
  temperaturas mínimas. El anillo azul corresponde a los 0 grados.
- 
+
  Sí uno desactiva las temperaturas y presiona la letra r puede ver los valores máximos y mínimos
  de rocíos. Al igual que en la visualización de las temperaturas los puntos exteriores 
- corresponden a los rocíos máximos, mientras que las internas a los rocíos mínimos. 
- 
- Al ingresar a la visualización semestral se presentan 2 segmentos, uno superior que corresponde 
- al primer semestre del año 2015 y el segundo segmento o inferior que contiene los datos del 
- segundo semestre del mismo año. 
- 
- Para la temperatura se muestra una barra clara que muestra las temperaturas máximas y las 
+ corresponden a los rocíos máximos, mientras que las internas a los rocíos mínimos.
+
+ Al ingresar a la visualización semestral se presentan 2 segmentos, uno superior que corresponde
+ al primer semestre del año 2015 y el segundo segmento o inferior que contiene los datos del
+ segundo semestre del mismo año.
+
+ Para la temperatura se muestra una barra clara que muestra las temperaturas máximas y las
  barras oscuras las temperaturas mínimas.
- 
- Para los rocíos se muestra una ellipses oscura que simboliza los puntos máximos de rocío 
+
+ Para los rocíos se muestra una ellipses oscura que simboliza los puntos máximos de rocío
  y las ellipses claras pertenecen a los puntos mínimos de rocío.
- 
- Se demuestra las variaciones de las velocidades del viento con los anchos de los rectángulos, 
- mientras más anchos más velocidad del viento había y viceversa. 
- 
- En la visualización Mensual solo hay interacción con las flechas derecha e izquierda para 
+
+ Se demuestra las variaciones de las velocidades del viento con los anchos de los rectángulos,
+ mientras más anchos más velocidad del viento había y viceversa.
+
+ En la visualización Mensual solo hay interacción con las flechas derecha e izquierda para
  poder pasar de mes en mes.
- 
+
  Se muestra las temperaturas dibujando líneas según si son máximas o mínimas.
- 
- Estas ellipses muestran las variaciones de humedad según el mes. 
- 
- Las velocidades del viento se representan con pelotitas que se mueven en distintas 
+
+ Estas ellipses muestran las variaciones de humedad según el mes.
+
+ Las velocidades del viento se representan con pelotitas que se mueven en distintas
  velocidades según su valor de velocidad del viento.
- 
- Finalmente se muestran ellipses con una línea que apunta a las direcciones del viento 
- correspondientes. 
+
+ Finalmente se muestran ellipses con una línea que apunta a las direcciones del viento
+ correspondientes.
  */
 
-// Declaraciones de variables 
-Table tabla; 
+// Declaraciones de variables
+Table tabla;
 Clase [] objetos;
 
 int ver; // Variable para cambiar las pantallas
 
 // variables para pasar de mes en mes
-int prinMes = 0; 
+int prinMes = 0;
 int finMes = 30;
 int actMes = 1;
 
@@ -62,15 +62,15 @@ int actMes = 1;
 boolean mensual;
 
 // Creación de variables booleanas de información anual
-boolean fa; // Fechas anuales 
+boolean fa; // Fechas anuales
 boolean ta = true; // Temperatura anual
 boolean roca; // Rocio anual
 boolean cero; // boolean para activar el anillo cero
 
-// Creación de variables booleaneas de información semestral 
+// Creación de variables booleaneas de información semestral
 boolean roSem; // rocío Semestral
-boolean velVieSem; // velocidad del viento semestral 
-boolean tempSem = true; // temperatura semestral que partira viendose 
+boolean velVieSem; // velocidad del viento semestral
+boolean tempSem = true; // temperatura semestral que partira viendose
 
 boolean valor; // boolean para cambiar las variables semestralas
 
@@ -85,7 +85,7 @@ void setup() {
 
   BDD(); // Agrego la funcion de cargar los datos al setup
 
-  // Creo mi paleta de colores 
+  // Creo mi paleta de colores
   col = new color [3];
   col [0] = color (147, 39, 143); // Morado
   col [1] = color (12, 66, 110); // Celeste medio
@@ -115,7 +115,7 @@ void draw() {
     }
   }
 
-  // condición para cambiar de mes en mes 
+  // condición para cambiar de mes en mes
   if (mensual) {
     int k = prinMes;
     for (int i = (width/finMes-prinMes); i < width-10; i+=width/(finMes-prinMes)) {
@@ -128,7 +128,7 @@ void draw() {
   }
 
   // condiciones para definir el tamaño de los meses
-  if (actMes == 1) { 
+  if (actMes == 1) {
     prinMes = 1;
     finMes = 31;
   }
@@ -195,7 +195,7 @@ void draw() {
   fill (200);
   text("1 Datos Anuales  ||  2 Datos Semestrales  ||  3 Datos Mensuales", 10, 20);
 
-  // Anual 
+  // Anual
   if (ver == 0) {
     fill(200);
     text(" r = Rocíos máximos y mínimos || t = Temperaturas máximas y mínimas || f = fechas iniciando por enero a las 12", 650, 20);
@@ -208,11 +208,11 @@ void draw() {
       rect (980, height/2, 420, 550);
       fill(col[2]);
 
-      textSize(40);    
+      textSize(40);
       text ("Tromso, Noruega", 780, 120);
 
-      translate(0, 50);      
-      textSize(20);    
+      translate(0, 50);
+      textSize(20);
       text ("Se muestra una visualización de las", 780, 140);
       text (" variaciones de temperatura en Tromso.", 775, 170);
       text (" Los datos exteriores del anillo pertenecen", 775, 200);
@@ -248,11 +248,11 @@ void draw() {
       rect (980, height/2, 420, 550);
       fill(col[2]);
 
-      textSize(40);    
+      textSize(40);
       text ("Tromso, Noruega", 780, 120);
 
-      translate(0, 50);      
-      textSize(20);    
+      translate(0, 50);
+      textSize(20);
       text ("Se muestra una visualización de las", 780, 140);
       text (" variaciones de rocío en Tromso.", 775, 170);
       text (" Los datos exteriores pertenecen a ", 775, 200);
@@ -265,7 +265,7 @@ void draw() {
       text (" Rocío mínimo ", 820, 455);
       text (" Grados cero ", 820, 505);
 
-      // Leyenda 
+      // Leyenda
       fill(col[1]);
       ellipse (800, 400, 20, 20);
       fill(col[2]);
@@ -308,13 +308,13 @@ void BDD() {
   objetos = new Clase [tabla.getRowCount()]; // Cargo las filas de la tabla
 
   for (int i = 0; i < tabla.getRowCount(); i++) {
-    TableRow row = tabla.getRow(i); 
+    TableRow row = tabla.getRow(i);
 
     // Declarotodas las variables de mi tabla de les entrego un nombte
     int index = i;
 
     int mes = row.getInt(" M");
-    int dia = row.getInt("D");  
+    int dia = row.getInt("D");
     int maxTemp = row.getInt("maxTemp");
     int minTemp = row.getInt("minTemp");
     int maxRo = row.getInt("maxRocio");
@@ -336,13 +336,13 @@ void keyPressed() {
     tempSem = !tempSem;
   }
 
-  // Tecla para ver los rocios 
+  // Tecla para ver los rocios
   if (key == 'r') {
     roca = !roca;
     roSem = !roSem;
   }
 
-  // Tecla de fechas 
+  // Tecla de fechas
   if (key == 'f') {
     fa = !fa;
   }
