@@ -98,6 +98,7 @@ class Clase {
 		triangle((width / 2) + 500, 695, (width / 2) + 510, 695, width / 2 + 505, 688);
 	}
 	//Visualización del mes
+    // Falta una guía que ayude a saber los rangos de los valores
 	void mes(int m) {
 		//Nombre del mes en cada cambio
 		textSize(30);
