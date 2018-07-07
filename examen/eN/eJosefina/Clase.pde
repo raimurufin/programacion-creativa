@@ -75,7 +75,10 @@ class Clase {
 		noStroke();
 		triangle(160, -30, prtMin + 180, 0, 160, 30);
 		popMatrix();
+
 		//Leyenda
+        // La leyenda se escribe todas las veces que la función está dentro del loop
+        // Esta debe ser llamada una sola vez
 		fill(colores[12]);
 		rect(0, 680, 1280, 55);
 		textSize(10);
