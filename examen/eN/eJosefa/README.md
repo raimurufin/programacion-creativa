@@ -33,4 +33,3 @@ Estas ellipses muestran las variaciones de humedad según el mes.
 Las velocidades del viento se representan con pelotitas que se mueven en distintas velocidades según su valor de velocidad del viento.
 
 Finalmente se muestran ellipses con una línea que apunta a las direcciones del viento correspondientes. 
-

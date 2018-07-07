@@ -1,8 +1,8 @@
 class Clase {
 
   // Variables para la clase
-  int index; 
-  float maxTemp, minTemp, minTempSem, maxTempSem, velVie, hum, maxRo, minRo, maxRoSem, minRoSem, dirVie; 
+  int index;
+  float maxTemp, minTemp, minTempSem, maxTempSem, velVie, hum, maxRo, minRo, maxRoSem, minRoSem, dirVie;
 
   float y;
   float angle, r;
@@ -24,7 +24,7 @@ class Clase {
     this.dirVie = map(dirVie, 0, 359, 0, 360);
   }
 
-  // void con toda la información que se mostrara anualmente 
+  // void con toda la información que se mostrara anualmente
   void anoInfo() {
     anoTemp(ta);
     anilloAno(fa);
@@ -352,7 +352,7 @@ class Clase {
     float angulo = radians(dirVie);
     r = 20;
 
-    // Humedad 
+    // Humedad
     noStroke();
     fill(col[0]);
     ellipse(i, height/2, hum, hum);
@@ -370,13 +370,13 @@ class Clase {
 
     // Velocidad del viento
     pushMatrix();
-    y = r * sin(angle); //sin siempre para y 
+    y = r * sin(angle); //sin siempre para y
     //rotate(frameCount *velVie*.01);
     ellipse(i, y + 650, 15, 15);
     angle = frameCount * velVie * 0.01;
     popMatrix();
 
-    // Dirección del viento 
+    // Dirección del viento
     noFill();
     strokeWeight(2);
     stroke(col[2]);
@@ -392,9 +392,9 @@ class Clase {
 
   //////////////////////////////////////////////////////
   //                   Semestral                      //
-  //////////////////////////////////////////////////////       
+  //////////////////////////////////////////////////////
 
-  void primSem(boolean valor) {   
+  void primSem(boolean valor) {
 
     // conecto todos los dibujos del primer semestre en el void según las boolean
     pushMatrix();
@@ -447,7 +447,7 @@ class Clase {
 
       translate(width/3, height/2);
       rotate(radians(270));
-      rotate(radians(index * 360 / 365)); // 360 grados / 365 dias 
+      rotate(radians(index * 360 / 365)); // 360 grados / 365 dias
       noStroke();
       fill(col[1]);
       ellipse(minRo, 0, 2, 2);
@@ -473,7 +473,7 @@ class Clase {
 
       translate(width/3, height/2);
       rotate(radians(270));
-      rotate(radians(index * 360/365)); // 360 grados / 365 dias 
+      rotate(radians(index * 360/365)); // 360 grados / 365 dias
       strokeWeight(1);
 
       // Anillo que muestra grado 0
@@ -500,7 +500,7 @@ class Clase {
       pushMatrix();
       translate(width/3, height/2);
       rotate(radians(270));
-      rotate(radians(index * 360 / 365)); // 360 grados / 365 dias 
+      rotate(radians(index * 360 / 365)); // 360 grados / 365 dias
       strokeWeight(0.5);
 
       stroke(0, 0, 100);
