@@ -17,7 +17,7 @@
  temperaturas mínimas. El anillo azul corresponde a los 0 grados.
 
  Sí uno desactiva las temperaturas y presiona la letra r puede ver los valores máximos y mínimos
- de rocíos. Al igual que en la visualización de las temperaturas los puntos exteriores 
+ de rocíos. Al igual que en la visualización de las temperaturas los puntos exteriores
  corresponden a los rocíos máximos, mientras que las internas a los rocíos mínimos.
 
  Al ingresar a la visualización semestral se presentan 2 segmentos, uno superior que corresponde
@@ -301,7 +301,7 @@ void draw() {
     }
   }
 }
-
+// los métodos no pueden ser con Mayúsculas
 void BDD() {
 
   tabla = loadTable("BDD Examen Def.csv", "header"); // Cargo la tabla a processing
