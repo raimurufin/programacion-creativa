@@ -35,171 +35,171 @@ visualizando. El cambio de día se ejecuta presionando las flechas de “arriba�
 “abajo”.
 */
 
-Clase[]objetos;
+Clase[] objetos;
 Table tabla;
 int index; //variable de todos los datos
 int anual = 1;
 int mes = 0;
 int dia = 0;
-int mSt = 0;//inicio del mes
-int mEnd = 30;//término del mes
-int mesAct = 1;//mes actual
+int mSt = 0; //inicio del mes
+int mEnd = 30; //término del mes
+int mesAct = 1; //mes actual
 int k;
 
 void setup() {
-  size( 1280, 700 );
-  //Cargar la base de datos
-  tabla = loadTable("Seefeld_Austria_E.csv", "header");
-  int total = tabla.getRowCount();
-  objetos = new Clase [total];
+	size(1280, 700);
+	//Cargar la base de datos
+	tabla = loadTable("Seefeld_Austria_E.csv", "header");
+	int total = tabla.getRowCount();
+	objetos = new Clase[total];
 
-  for (int i = 0; i < tabla.getRowCount(); i++) {
-     TableRow row = tabla.getRow(i);
+	for (int i = 0; i < tabla.getRowCount(); i++) {
+		TableRow row = tabla.getRow(i);
 
-//Se cargan headers
-    int mes = row.getInt ("M");
-    int dia = row.getInt ("D");
-    float tmaxima = row.getFloat ("Max TemperatureC");
-    float tminima = row.getFloat ("Min TemperatureC");
-    float maxHum = row.getFloat ("Max Humidity");
-    float minHum = row.getFloat (" Min Humidity");
-    float maxWind = row.getFloat (" Max Wind SpeedKm/h");
-    float precip = row.getFloat ("Precipitationmm");
-    float clCover = row.getFloat (" CloudCover");
-    float events = row.getFloat (" Events");
-    float prtMax = row.getFloat ("PromedioTMax");
-    float prtMin = row.getFloat ("PromedioTMin");
+		//Se cargan headers
+		int mes = row.getInt("M");
+		int dia = row.getInt("D");
+		float tmaxima = row.getFloat("Max TemperatureC");
+		float tminima = row.getFloat("Min TemperatureC");
+		float maxHum = row.getFloat("Max Humidity");
+		float minHum = row.getFloat(" Min Humidity");
+		float maxWind = row.getFloat(" Max Wind SpeedKm/h");
+		float precip = row.getFloat("Precipitationmm");
+		float clCover = row.getFloat(" CloudCover");
+		float events = row.getFloat(" Events");
+		float prtMax = row.getFloat("PromedioTMax");
+		float prtMin = row.getFloat("PromedioTMin");
 
-//Se relaciona el objeto con la lista
-objetos[i] = new Clase(mes, dia, tmaxima, tminima, maxHum,
- minHum, maxWind, precip, clCover, events, prtMax, prtMin, i);
-}
+		//Se relaciona el objeto con la lista
+		objetos[i] = new Clase(mes, dia, tmaxima, tminima, maxHum,
+			minHum, maxWind, precip, clCover, events, prtMax, prtMin, i);
+	}
 }
 
 void draw() {
-background(255);
-//Llama al año
-if (anual == 1){
-  int y = 0;
-  for (int i = 0; i < objetos.length; i += 30) {
+	background(255);
+	//Llama al año
+	if (anual == 1) {
+		int y = 0;
+		for (int i = 0; i < objetos.length; i += 30) {
 
-    objetos[y].anual(y);
-    y += 30;
-    if(y > 359) y = 0;
-  }
-}
-//Llama al mes
-if (mes == 1){
-k = mSt;//inicio de cada mes
-for (int i = (width / (mEnd - mSt)) - 10; i < width - 10; i += width / (mEnd-mSt)) {
-objetos[k].mes(i);
-k ++;
-if( k > mEnd) k = mSt;
-  }
-}
-//Llama al dia
-if (dia == 1){
-  objetos[index].dia();
-  }
+			objetos[y].anual(y);
+			y += 30;
+			if (y > 359) y = 0;
+		}
+	}
+	//Llama al mes
+	if (mes == 1) {
+		k = mSt; //inicio de cada mes
+		for (int i = (width / (mEnd - mSt)) - 10; i < width - 10; i += width / (mEnd - mSt)) {
+			objetos[k].mes(i);
+			k++;
+			if (k > mEnd) k = mSt;
+		}
+	}
+	//Llama al dia
+	if (dia == 1) {
+		objetos[index].dia();
+	}
 
-//Rango de días es cada mes
-  if(mesAct == 1){
-    mSt = 0;
-    mEnd = 30;
-  }
-  if(mesAct == 2){
-    mSt = 31;
-    mEnd = 59;
-  }
-  if(mesAct == 3){
-    mSt = 60;
-    mEnd = 89;
-  }
-  if(mesAct == 4){
-    mSt = 90;
-    mEnd = 119;
-  }
-  if(mesAct == 5){
-    mSt = 120;
-    mEnd = 150;
-  }
-  if(mesAct == 6){
-    mSt = 151;
-    mEnd = 180;
-  }
-  if(mesAct == 7){
-    mSt = 181;
-    mEnd = 211;
-  }
-  if(mesAct == 8){
-    mSt = 212;
-    mEnd = 242;
-  }
-  if(mesAct == 9){
-    mSt = 243;
-    mEnd = 272;
-  }
-  if(mesAct == 10){
-    mSt = 273;
-    mEnd = 303;
-  }
-  if(mesAct == 11){
-    mSt = 304;
-    mEnd = 333;
-  }
-  if(mesAct == 12){
-    mSt = 334;
-    mEnd = 364;
-  }
-//}
+	//Rango de días es cada mes
+	if (mesAct == 1) {
+		mSt = 0;
+		mEnd = 30;
+	}
+	if (mesAct == 2) {
+		mSt = 31;
+		mEnd = 59;
+	}
+	if (mesAct == 3) {
+		mSt = 60;
+		mEnd = 89;
+	}
+	if (mesAct == 4) {
+		mSt = 90;
+		mEnd = 119;
+	}
+	if (mesAct == 5) {
+		mSt = 120;
+		mEnd = 150;
+	}
+	if (mesAct == 6) {
+		mSt = 151;
+		mEnd = 180;
+	}
+	if (mesAct == 7) {
+		mSt = 181;
+		mEnd = 211;
+	}
+	if (mesAct == 8) {
+		mSt = 212;
+		mEnd = 242;
+	}
+	if (mesAct == 9) {
+		mSt = 243;
+		mEnd = 272;
+	}
+	if (mesAct == 10) {
+		mSt = 273;
+		mEnd = 303;
+	}
+	if (mesAct == 11) {
+		mSt = 304;
+		mEnd = 333;
+	}
+	if (mesAct == 12) {
+		mSt = 334;
+		mEnd = 364;
+	}
+	//}
 }
 
 //Cambio de Sketch
- void keyPressed() {
-if(key == '1'){ //llama al void anual
-  anual = 1;
-  mes = 0;
-  dia = 0;
-}
+void keyPressed() {
+	if (key == '1') { //llama al void anual
+		anual = 1;
+		mes = 0;
+		dia = 0;
+	}
 
-  if(key == '2'){ //llama void mes
-    anual = 0;
-    mes = 1;
-    dia = 0;
-  }
+	if (key == '2') { //llama void mes
+		anual = 0;
+		mes = 1;
+		dia = 0;
+	}
 
-if(key == '3'){ //llama void día
-      anual = 0;
-      mes = 0;
-      dia = 1;
-    }
+	if (key == '3') { //llama void día
+		anual = 0;
+		mes = 0;
+		dia = 1;
+	}
 
-//Cambio de mes en mes
-    if(key == CODED){
+	//Cambio de mes en mes
+	if (key == CODED) {
 
-      if(keyCode == LEFT){
-        if(mesAct > 1) mesAct -= 1;
-      }
+		if (keyCode == LEFT) {
+			if (mesAct > 1) mesAct -= 1;
+		}
 
-      if(keyCode == RIGHT){
-        if(mesAct < 12) mesAct += 1;
-      }
+		if (keyCode == RIGHT) {
+			if (mesAct < 12) mesAct += 1;
+		}
 
-//Cambio día por día
-        if(keyCode == UP){
-          if(index <= 0){
-            index = 364;
-          }else{
-            index --;
-          }
-          }
+		//Cambio día por día
+		if (keyCode == UP) {
+			if (index <= 0) {
+				index = 364;
+			} else {
+				index--;
+			}
+		}
 
-          if(keyCode == DOWN){
-            if (index >= 364){
-              index = 0;
-            }else{
-              index ++;
-            }
-          }
-  }
+		if (keyCode == DOWN) {
+			if (index >= 364) {
+				index = 0;
+			} else {
+				index++;
+			}
+		}
+	}
 }
