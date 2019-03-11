@@ -10,7 +10,7 @@ Entregar por medio de un pull request
 
 ##### Descripción
 
-Se debe entregar un programa que cree diferentes piezas, en donde la diagramación, formas, y colores sean modificables por **inputs**, para obtener imágenes[^1] en PDF de resolución **A4**.
+Se debe entregar un programa que cree diferentes piezas, en donde la diagramación, formas, y colores sean modificables por **inputs**, para obtener imágenes [^1] en PDF de resolución **A4**.
 
 ------
 
