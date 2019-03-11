@@ -29,6 +29,12 @@ Cada entrega deberá tener un archivo readme.md que describa el trabajo, un **re
 ------
 
 [^1]: Se deberan entregar cuatro imágenes impresas
+
+
+
 [^2]: Abreviatura del inglés ***op**tical **art***, lit., 'arte óptico'
+
+
+
 [^3]: Typora es una aplicación para la redacción en formato md (Markdown)
 
