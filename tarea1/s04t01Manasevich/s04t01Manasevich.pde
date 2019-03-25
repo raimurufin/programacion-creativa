@@ -1,3 +1,6 @@
+//Tarea 1 - Programacion Creativa
+//Profesor: Nicolás Troncoso
+//Alumno: Pedro Manasevich
 Clase c;
 
 boolean linea1;
