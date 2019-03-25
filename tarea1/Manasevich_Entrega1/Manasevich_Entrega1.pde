@@ -22,7 +22,7 @@ void setup() {
 }
 
 void draw() {
-  
+
 
   if (linea1) {
     c.linea1();
@@ -42,7 +42,9 @@ void draw() {
   if (estrellas) {
     c.estrellas();
   }
-
+  c.punto1(); 
+  c.punto2();
+  c.punto3();
 
   if (mousePressed == false) {
     c.elipse();

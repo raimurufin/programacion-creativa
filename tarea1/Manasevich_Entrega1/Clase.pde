@@ -63,6 +63,18 @@ class Clase {//Clase
     stroke (255, 255, 0, 25);
     line (595, 842, x, y);
   }
+  void punto1(){
+    strokeWeight(.1);
+    line(0,0,1,1);
+}
+ void punto2(){
+    strokeWeight(1);
+    point(0,842);
+}
+ void punto3(){
+    strokeWeight(.1);
+    point(0,592);
+}
 }
 void keyPressed() {
   if (key=='a'||key=='A') {//fondo
