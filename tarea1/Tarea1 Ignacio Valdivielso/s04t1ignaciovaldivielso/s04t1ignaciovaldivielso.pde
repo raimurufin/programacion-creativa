@@ -22,8 +22,3 @@ o.rec();
 o.rec2();
 o.tri();
 }
-void keyPressed(){ //captura de imagenes
-if (key== 'r') {
-    saveFrame("captura_###.png");
-}
-}

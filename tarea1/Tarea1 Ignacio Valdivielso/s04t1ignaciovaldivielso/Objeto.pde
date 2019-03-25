@@ -35,17 +35,17 @@ float bord = 600;
  void ellip(){ 
    if(keyPressed){
    if(key == 'n' || key == 'N'){
-   ellipse(width/2, height/2, mid,400);
+   ellipse(width/2, height/2, 400,600);
    }  
  }
  }
   void ellip2(){ 
    if(keyPressed){
-   if(key == '4' || key == '4'){
-   ellipse(width/2, height/2, 400,700);
-   }
-   }
-  }
+   if(key == '4'){
+   ellipse(width/2, height/2, 500,700);
+   }  
+ }
+ }
  void gro(){
     if (keyPressed == true){
 if (key == '1') {
