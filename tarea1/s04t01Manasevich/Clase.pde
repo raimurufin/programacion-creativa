@@ -28,6 +28,7 @@ class Clase {//Clase
       yspeed*=-1;
     }
     rectMode(CENTER);
+    strokeWeight(4);
     stroke(x, y);
     fill(relleno);
     rect(x, y, 32, 32);
