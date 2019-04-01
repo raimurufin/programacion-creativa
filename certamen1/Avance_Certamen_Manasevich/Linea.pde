@@ -7,7 +7,7 @@ class Linea {//Clase
   void figura() {
 
 
-    for (float r= 0; r < 3; r++) {
+    for (float r= 0; r < cantidad; r++) {
 
         pushMatrix();
         rotate(TWO_PI*frameCount*.005);
