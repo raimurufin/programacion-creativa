@@ -1,9 +1,9 @@
 class Clase {//Clase
 
+// Constructor
   Clase() { //Clase
   }
 
-  // Constructor
   void elipse() { //elipse que rebota eje x e y
     x+= xspeed;
     if (x>width||x<0) {
@@ -35,7 +35,7 @@ class Clase {//Clase
   }
 
   void estrellas() {
-    
+
     r+= rspeed;
     if (r>width||r<0) {
       rspeed*=-.1;
@@ -66,7 +66,7 @@ class Clase {//Clase
   }
   void punto1(){
     strokeWeight(.1);
-    line(0,0,1,1);
+    point(0,0);
 }
  void punto2(){
     strokeWeight(1);

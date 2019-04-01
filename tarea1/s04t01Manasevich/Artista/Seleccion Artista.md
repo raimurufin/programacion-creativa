@@ -1,3 +1,3 @@
-Selección Artista: Aaron Penne
+Selección Artista: Joshua Davis
 
-Link obra: <https://www.instagram.com/p/BvbIML3gkEy/>
+Link obra: <https://joshuadavis.com/the-End-of-August>
