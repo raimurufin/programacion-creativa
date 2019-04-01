@@ -12,7 +12,7 @@ Entregar por medio de un **pull request**
 
 ##### Objetivo
 
-Diseño de un programa que demuestre el uso de los conceptos **Programación Orientada a Objetos** con métodos y atributos que describan formas, **movimiento, movimiento complejo, y movimiento generativo**. 
+Diseño de un programa que demuestre el uso de los conceptos **Programación Orientada a Objetos** con métodos y atributos que describan formas, **movimiento, movimiento complejo**. 
 
 ------
 
