@@ -11,7 +11,7 @@ void setup() {
 void draw() {
   background(200);
   translate(width/2, height/2);
-l.figura();
+l.figura(cantidad);
 
   }
 
