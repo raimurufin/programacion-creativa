@@ -1,8 +1,8 @@
 Linea c1,c2;
 
 
-int cantidad = 20;
-float r = 0;
+int cantidad = 50;//variable cantidad
+float r = 0;//variable rotacion
 
 
 
@@ -12,7 +12,7 @@ void setup() {
   size(900, 700);//Tamaño Canvas
   background(0);//Fondo
   noStroke(); //Valor de la linea.
-  strokeCap(SQUARE);
+  strokeCap(SQUARE);//puntas de las lineas cuadradas
   c1 = new Linea();
   c2 = new Linea();
 
@@ -20,9 +20,9 @@ void setup() {
 }
 
 void draw() {
-  background(0);
-  c1.lineas();
-  println(cantidad);
+  background(0);//fondo
+  c1.lineas(); //llama a lineas
+  println(cantidad);//muestra "cantidad" en la consola
 
 
 
@@ -32,7 +32,6 @@ void draw() {
   if(key=='a'||key=='A'){//Aumenta la cantidad de lineas
       cantidad+=1;
   }
-
   if(key=='s'||key=='S'){//disminuye la cantidad de lineas
     cantidad-=1;
   }
