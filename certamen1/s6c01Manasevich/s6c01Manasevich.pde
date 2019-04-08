@@ -1,4 +1,4 @@
-Linea c1,c2;
+Linea c1;
 
 
 int cantidad = 50;//variable cantidad
@@ -14,7 +14,7 @@ void setup() {
   noStroke(); //Valor de la linea.
   strokeCap(SQUARE);//puntas de las lineas cuadradas
   c1 = new Linea();
-  c2 = new Linea();
+
 
 
 }
@@ -35,10 +35,17 @@ void draw() {
   if(key=='s'||key=='S'){//disminuye la cantidad de lineas
     cantidad-=1;
   }
+
   if(key=='w'||key=='W'){//reanuda el sketch
     loop();
   }
   if(key=='q'||key=='Q'){//detiene el sketch
     noLoop();
+  }
+  if(key=='c'||key=='C'){//detiene el sketch
+    saveFrame("pantallazo-######.png");
+  }
+  if(key=='r'||key=='R'){//detiene el sketch
+    background(0);
   }
   }
