@@ -24,3 +24,7 @@ El análisis de la obra construirá las reglas del certamen, ya que se deberá r
 
 ------
 
+##### Pauta de evaluación
+
+![pauta](https://cl.ly/9afdd51a5e4d/Image%202019-04-03%20at%2010.28.49%20PM.png)
+
