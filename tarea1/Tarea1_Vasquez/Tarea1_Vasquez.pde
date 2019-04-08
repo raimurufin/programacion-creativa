@@ -19,18 +19,21 @@ void setup() {
   c2 = new cuadrado(0);
 }
 void draw () {
-c1.foto();
-  c1.fondo();
-  c1.pos();
-  c1.pos2(); 
-  c1.cambiodecolor1();
-  c1.negativo(); 
+  c1.grilla(10, 10,4, 20, 5, 5);
+  c1.grilla(200, 200,4, 20, 5, 5);
+  c1.grilla(mouseX, mouseY, 3, 10, 6, 6);
+//c1.foto();
+//  c1.fondo();
+//  c1.pos();
+//  c1.pos2(); 
+//  c1.cambiodecolor1();
+//  c1.negativo(); 
 
-c2.foto();
-  c2.keyPressed();
-  c2.cambiodecolor2();
-  c2.pos();
-  c2.pos3();
-  c2.pos4();
+//c2.foto();
+//  c2.keyPressed();
+//  c2.cambiodecolor2();
+//  c2.pos();
+//  c2.pos3();
+//  c2.pos4();
   
 }
