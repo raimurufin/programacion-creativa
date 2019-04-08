@@ -1,17 +1,24 @@
 Linea l;
 
-int cantidad = 3;
+
+int cantidad = 6;
+
+
 
 
 void setup() {
-  size(600, 600);
+
+  size(900, 700);
   l = new Linea();
+
+
 }
 
 void draw() {
-  background(200);
+  background(255);
   translate(width/2, height/2);
-l.figura(cantidad);
+  l.figura(cantidad);
+
 
   }
 
