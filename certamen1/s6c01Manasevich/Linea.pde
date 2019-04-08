@@ -15,7 +15,7 @@ void lineas() {
   stroke(255); //Color de la linea.
   line( 40,40, 100, random(50, 400)); //Linea.
 
-//linea 2  
+//linea 2
   strokeWeight(6);
   stroke(random(0,255), 0, random(0,255)); //Color de la linea.
   line( 40,40, 100, random(50, 400)); //Linea.
