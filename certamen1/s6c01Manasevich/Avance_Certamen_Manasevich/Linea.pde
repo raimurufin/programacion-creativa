@@ -2,22 +2,23 @@ class Linea {//Clase
 
 
 // Constructor
-  Linea() { //Clase
+  Linea() {
   }
 
+void lineas() {
+  translate (width/2, height/2);//trasladar
+  for(float i=0;i<cantidad;i++){
+  rotate(r);//Rotar
+  r+=.1;
+//linea 1
+  strokeWeight(3);
+  stroke(255); //Color de la linea.
+  line( 40,40, 100, random(50, 400)); //Linea.
 
-
-  void figura(int cantidad) {
-    for (float r= 0; r < cantidad; r++) {
-
-        pushMatrix();
-        rotate(r++);
-        strokeWeight(8);
-        stroke(200,0,0);
-        rect(0,30, 300, 1);
-        popMatrix();
-        r+=1;
-
-      }
-    }
-  }
+//linea 2
+  strokeWeight(6);
+  stroke(random(0,255), 0, random(0,255)); //Color de la linea.
+  line( 40,40, 100, random(50, 400)); //Linea.
+}
+}
+}
