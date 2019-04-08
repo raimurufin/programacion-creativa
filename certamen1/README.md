@@ -12,7 +12,7 @@ Entregar por medio de un **pull request**
 
 ##### Objetivo
 
-Diseño de un programa que demuestre el uso de los conceptos **Programación Orientada a Objetos** con métodos y atributos que describan formas, **movimiento, movimiento complejo, y movimiento generativo**. 
+Diseño de un programa que demuestre el uso de los conceptos **Programación Orientada a Objetos** con métodos y atributos que describan formas, **movimiento, movimiento complejo**. 
 
 ------
 
@@ -23,4 +23,8 @@ Para el 25/03 se deberá entregar el estudio de una obra perteneciente a: una of
 El análisis de la obra construirá las reglas del certamen, ya que se deberá reconstruir a través de código, los aspectos de la obra analizada.
 
 ------
+
+##### Pauta de evaluación
+
+![pauta](https://cl.ly/9afdd51a5e4d/Image%202019-04-03%20at%2010.28.49%20PM.png)
 
