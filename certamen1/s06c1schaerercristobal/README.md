@@ -8,15 +8,13 @@ Mi referente es Sarah Groff Hennig-Palermo.
 
 Revisando videos que tiene de sus trabajos, pude ver como juega con el movimiento, la rotación y las figuras, por lo que de su trabajo, saqué ideas de elementos que utiliza. 
 
-![1554666569034](C:\Users\CHRIST~1\AppData\Local\Temp\1554666569034.png)
+![Sarahgroff_ referente1](C:\Users\christian\Documents\GitHub\2019\programacion-creativa\certamen1\s06c1schaerercristobal\Sarahgroff_ referente1.png)
 
-
-
-![1554666592508](C:\Users\CHRIST~1\AppData\Local\Temp\1554666592508.png)
+![Sarahgroff_referente2](C:\Users\christian\Documents\GitHub\2019\programacion-creativa\certamen1\s06c1schaerercristobal\Sarahgroff_referente2.png)
 
 Esta última imagen es de uno de sus trabajos del cual saqué la paleta de color.
 
-![1554666656687](C:\Users\CHRIST~1\AppData\Local\Temp\1554666656687.png)
+![Sarahgroff_paleta de color](C:\Users\christian\Documents\GitHub\2019\programacion-creativa\certamen1\s06c1schaerercristobal\Sarahgroff_paleta de color.png)
 
 
 
