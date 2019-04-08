@@ -1,43 +1,45 @@
-Linea l,l1,l2,l3,l4;
+Linea c1,c2;
 
 
-int cantidad = 6;
-float rot = 0;
-float r=(random(255));
-float g=255;
-float b=255;
+int cantidad = 20;
+float r = 0;
 
 
 
 
 void setup() {
 
-  size(900, 700);
-  l = new Linea();
-  l2 = new Linea();
-  l3 = new Linea();
-  l4 = new Linea();
+  size(900, 700);//Tamaño Canvas
+  background(0);//Fondo
+  noStroke(); //Valor de la linea.
+  strokeCap(SQUARE);
+  c1 = new Linea();
+  c2 = new Linea();
 
 
 }
 
 void draw() {
   background(0);
-  fill(random(255),0,0);
-  l.figura(cantidad,rot,r,g-255,b-255);
-  //l.figura(cantidad-100,rot,r,g-255,b-255);
-  //l.figura(cantidad-65,rot,r,g,b);
+  c1.lineas();
+  println(cantidad);
+
 
 
   }
 
   void keyPressed( ) {
-    if(key=='a'||key=='A'){
-      cantidad+=100;
-    }
-
-  if(key=='s'||key=='S'){
-    cantidad-=100;
+  if(key=='a'||key=='A'){//Aumenta la cantidad de lineas
+      cantidad+=1;
   }
 
+  if(key=='s'||key=='S'){//disminuye la cantidad de lineas
+    cantidad-=1;
+  }
+  if(key=='w'||key=='W'){//reanuda el sketch
+    loop();
+  }
+  if(key=='q'||key=='Q'){//detiene el sketch
+    noLoop();
+  }
   }
