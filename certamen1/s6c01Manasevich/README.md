@@ -18,4 +18,4 @@ S: Disminuye la cantidad de lineas.
 W: Reanuda el sketch.
 Q: Detiene el sketch.
 C: Captura el sketch.
-R:
+R: Resetea el canvas.
