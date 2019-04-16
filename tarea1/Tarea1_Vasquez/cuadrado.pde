@@ -49,6 +49,17 @@ class cuadrado {
     }
   }
 
+  void grilla(int x, int y, int n, int space, float al, float an) {  //pos = abreviatura de posición 
+
+    for (int x1=0; x1<n; x1++) {
+      for (int y1=0; y1<n; y1++) {   
+        noStroke();
+        fill(0);
+        rect(x +(x1*space), y + (y1*space), al, an);
+      }
+    }
+  }
+
 
   void pos2 () {
     for (int x=2; x<=a; x+=40) {
