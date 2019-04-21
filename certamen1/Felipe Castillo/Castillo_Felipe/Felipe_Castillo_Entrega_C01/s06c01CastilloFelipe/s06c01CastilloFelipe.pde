@@ -4,6 +4,11 @@
 //Universidad del Desarrollo
 //Código Principal
 
+/*
+ No existe una descripción general del código escrito, qué se verá, ni cómo se utiliza.
+ Si bien está en un archivo README.md este es una copia de la descripción que aquí que genera, y no al revés
+*/
+
 Orb alpha;
 
 void setup() {

@@ -36,7 +36,11 @@ class Orb {
   }
 
   //Comandos de Teclado
-
+/*
+Al momento de modificar atributos en un programa por medio de manupuladores
+esternos como el teclado, esto se debe hacer con el método global modificando
+variables globales que entran como parámetros locales a los métodos de la clase.
+*/
 
   void keyPressed() {           //Aumento de Velocidad de Rotación
     if (key == 'w') {
