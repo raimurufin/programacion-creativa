@@ -5,7 +5,7 @@ Figura f4;
 
 
 void setup() {
-  background(214,214,214);   
+  background(214,214,214);
 
   size(800, 900);
 
@@ -22,8 +22,8 @@ void draw() {
   f2.crear();
   f3.crear();
   f4.crear();
-  
-//llamada a accion rebote 
+
+//llamada a accion rebote
 
   f.rebote();
   f2.rebote();
