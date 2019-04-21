@@ -33,6 +33,7 @@ class Espiral {
     }
   }
 
+  // Descripciones de los métodos es importante para entender código
   void circulo( float x, float y, float w, float r, int n) {
     float angulo = TWO_PI / n;
     float mitad = angulo/4;
@@ -40,7 +41,7 @@ class Espiral {
       float sx = x + cos(a) * r;
       float sy = y + sin(a) * r;
       vertex(sx, sy);
-      sx = x + cos(a + mitad) * w; 
+      sx = x + cos(a + mitad) * w;
       sy = y + sin(a + mitad) * w;
       vertex(sx, sy);
     }

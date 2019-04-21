@@ -4,6 +4,11 @@
 // gabrielas6c00
 
 //Declaración de variable y clase
+
+/*
+ No existe una descripción general del código escrito, qué se verá, ni cómo se utiliza.
+*/
+
 Espiral e;
 float x, y, w, r;
 int n;
@@ -24,12 +29,12 @@ void draw() {
 void keyPressed() {
   if ( key =='2') {
     background(255);
-    e.circulo(x, y, w, r, n);
-    e.espiral();
-  } 
+    // e.circulo(x, y, w, r, n);
+    // e.espiral();
+  }
   if ( key =='3') {
     background(0);
-    e.espiral();
-    e.circulo(x, y, w, r, n);
+    // e.espiral();
+    // e.circulo(x, y, w, r, n);
   }
 }
