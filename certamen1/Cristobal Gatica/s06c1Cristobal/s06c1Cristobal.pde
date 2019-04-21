@@ -1,3 +1,7 @@
+/*
+ No existe una descripción general del código escrito, qué se verá, ni cómo se utiliza.
+*/
+
 Figura f;
 Figura f2;
 Figura f3;
@@ -5,7 +9,7 @@ Figura f4;
 
 
 void setup() {
-  background(214,214,214);
+  background(214, 214, 214);
 
   size(800, 900);
 
@@ -16,14 +20,14 @@ void setup() {
 }
 void draw() {
 
-//llamada a ellipses
+  //llamada a ellipses
 
   f.crear();
   f2.crear();
   f3.crear();
   f4.crear();
 
-//llamada a accion rebote
+  //llamada a accion rebote
 
   f.rebote();
   f2.rebote();
@@ -36,15 +40,15 @@ void draw() {
   f3.mover();
   f4.mover();
 
-//f.tama();
+  //f.tama();
 
-//intersecciones de puntos
+  //intersecciones de puntos
 
   f.con(f2);
   f3.con(f4);
   f2.con(f4);
 }
-void mousePressed(){
-background(random(0,255));
+void mousePressed() {
+  background(random(0, 255));
 
 }
