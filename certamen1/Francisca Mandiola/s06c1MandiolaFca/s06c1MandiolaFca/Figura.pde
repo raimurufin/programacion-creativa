@@ -1,6 +1,6 @@
 class Figura {
   //declarar float
-  float r = 0; 
+  float r = 0;
 
 
   void pelota() {
@@ -14,7 +14,7 @@ class Figura {
    //blanco
     fill (255);
     //sin línea de trazo
-    noStroke(); 
+    noStroke();
     //figura creada
    //con el mouse se mueve la variable x
     ellipse(mouseX, 0, r, 50);
@@ -23,7 +23,6 @@ class Figura {
     popMatrix();
 
 
-    
+
   }
 }
-
