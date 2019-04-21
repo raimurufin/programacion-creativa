@@ -40,8 +40,6 @@ void draw() {
   f3.mover();
   f4.mover();
 
-  //f.tama();
-
   //intersecciones de puntos
 
   f.con(f2);

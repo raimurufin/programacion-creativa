@@ -14,16 +14,12 @@ class Figura {
     tam = ftam;
   }
 
+  // descripción de cada método
   void crear() {
     smooth();
     stroke(255, 0, 0);
     strokeWeight(tam);
-    //noFill();
-    //color(255,0,0);
-    //noStroke();
     ellipse(x, y, 0.011, 0.011);
-    //line(x,y,0.1,0.1);
-    //point(x,y,1);
   }
 
   void mover() {
@@ -48,10 +44,4 @@ class Figura {
       line(x, y, m.x, m.y);
     }
   }
-  //void tama() {
-  //x = x + 0.04;
-  //  y = cos(x)*2;
-  //  translate(width/2, height/2);
-  // scale(random(1));
-  //fill(random(1));
 }
