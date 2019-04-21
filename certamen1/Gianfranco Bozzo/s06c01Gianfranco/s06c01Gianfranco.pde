@@ -1,6 +1,10 @@
 /*Certamen 1 Programación Creativa
  Gianfranco Bozzo*/
 
+/*
+ No existe una descripción general del código escrito, qué se verá, ni cómo se utiliza.
+*/
+
 Clase c1, c2;
 
 void setup() {
