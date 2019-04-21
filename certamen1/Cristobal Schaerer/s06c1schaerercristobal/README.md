@@ -20,6 +20,6 @@ Esta última imagen es de uno de sus trabajos del cual saqué la paleta de color
 
 
 
-Gran parte de mi trabajo es por creación propia sacando algunas ideas de composiciones de mi referente, Sarah Groff, como mencioné anteriormente ella juega con las rotaciones de figuras repetidas o con contornos, en varios trabajos tiene rotación de varias líneas o rectángulos, movimiento de círculos y estos superponiendose. Quise tomar estos aspectos y jugar con el movimiento de líneas, de arcos e círculos principalmente Y  con velocidades rápidas en ciertos métodos. 
+Gran parte de mi trabajo es por creación propia sacando algunas ideas de composiciones de mi referente, Sarah Groff, como mencioné anteriormente ella **juega** con las rotaciones de figuras repetidas o con contornos, en varios trabajos tiene rotación de varias líneas o rectángulos, movimiento de círculos y estos superponiendose. Quise tomar estos aspectos y jugar con el movimiento de líneas, de arcos e círculos principalmente Y  con velocidades rápidas en ciertos métodos. 
 
-
+**Los artistas no juegan**
