@@ -29,6 +29,7 @@ class Clase {
   }
 
   /*Funcion para controlar el tamaño de ambos circulos.*/
+  // Estas funciones de teclado, aunque sean locales, deben estar declaradas en el archivo principal
   void tamanocirculo() {
     if (key=='a') {
       x=x+1;
