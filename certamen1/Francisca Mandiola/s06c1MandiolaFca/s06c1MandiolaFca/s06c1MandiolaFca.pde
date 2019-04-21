@@ -1,11 +1,15 @@
-float circleX;
+/*
+ No existe una descripción general del código escrito, qué se verá, ni cómo se utiliza.
+*/
+
+
+
 //declarar figura
 Figura f;
 
 void setup() {
   //configuración tamaño
   size(400, 400);
-  circleX = 0;
   f = new Figura();
 }
 
