@@ -12,7 +12,7 @@ class Clase {
    es el maximo y el minimo por donde se puede mover el circulo real.*/
   void circuloreal(float x1, float x2) {
     noFill();
-    //stroke(0);
+    // si hay noFill, pero no hay stroke, el color no se controla
     x1=map(mouseX, 0, width, 0, width);
     x2=map(mouseY, 0, height, 0, height/2);
     ellipse(x1, x2, x, y);
@@ -22,7 +22,7 @@ class Clase {
    altura minima y maxima por donde se puede mover el reflejo del circulo.*/
   void circuloreflejo(float x3, float x4) {
     noFill();
-    //stroke(255, 0, 0);
+    // si hay noFill, pero no hay stroke, el color no se controla
     x3=map(mouseX, 0, width, 0, width);
     x4=map(height-mouseY, 0, height, height/2, height);
     ellipse(x3, x4, x, y);
