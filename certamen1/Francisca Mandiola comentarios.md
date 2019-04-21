@@ -10,5 +10,4 @@ El uso de buenas prácticas en el control de versión no existen, existe un solo
 
 **Aún cuando el certamen tiene falencias de investigación y análisis, el resultado gráfico se parece a lo que presentó como referente. **
 
-**La entrega en general carece de un detalle mayor que se vea reflejado de mejor manera**
-
+**La entrega en general carece de un detalle mayor que refleje una profundidad en el análisis de un artista, obra, y sobre todo del manejo de las estructuras de código vistas a la fecha.**
