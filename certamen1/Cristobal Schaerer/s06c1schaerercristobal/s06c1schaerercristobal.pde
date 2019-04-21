@@ -1,4 +1,7 @@
 //Certamen 1 - Cristóbal Schaerer - 2019
+/*
+ No existe una descripción general del código escrito, qué se verá, ni cómo se utiliza.
+*/
 
 Figura f;// La clase
 
