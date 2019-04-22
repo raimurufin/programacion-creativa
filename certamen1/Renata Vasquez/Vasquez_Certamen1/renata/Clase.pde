@@ -42,7 +42,7 @@ class triangulo {
 
   //Se declara que al mantener el mouse apretado, la rotación de la figura se detiene y la gama de colores cambia.
   void mousePressed() {
-    if (mousePressed) { 
+    if (mousePressed) {
       t= 0;
       c = 255;
     }

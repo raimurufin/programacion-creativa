@@ -1,7 +1,11 @@
+/*
+ No existe una descripción general del código escrito, qué se verá, ni cómo se utiliza.
+*/
+
 Lineas l;
 
 void setup() {
-  colorMode(RGB, 100); 
+  colorMode(RGB, 100);
   background(0); //fondo negro inicial
   size(800, 800);
   l = new Lineas();
