@@ -1,4 +1,4 @@
-# Certamen programación creativa
+﻿# Certamen programación creativa
 
 **Profesor:** Nicolás Troncoso
 
@@ -26,7 +26,7 @@ Una vez analizados los referentes, logre reconstruir una parte clave de la obra,
 
 ### **Referentes: 
 
-![referente01](C:\Users\JuanWin10\Desktop\PROGRAMACION\PROGRMACION-CREATIVA-2019\certamen01_ecclefieldv2\Visualizaciones\referente01.png)
+![referente01](img\referente01.png)
 
 ![referente02](C:\Users\JuanWin10\Desktop\PROGRAMACION\PROGRMACION-CREATIVA-2019\certamen01_ecclefieldv2\Visualizaciones\referente02.png)
 
