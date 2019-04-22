@@ -11,5 +11,5 @@ void setup() {
 void draw () {
 
 
-  o.circulo(); 
+  o.circulo();
 }
