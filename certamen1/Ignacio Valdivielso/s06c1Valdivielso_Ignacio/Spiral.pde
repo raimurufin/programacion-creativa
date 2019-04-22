@@ -2,11 +2,11 @@ class Spiral {
 
 int l;
 int m;
-  
+
   Spiral(int n, int l, int m, int q){
     //this.l = l;
     //this.m = m;
-  
+
   }
   float rot; //rotación
 
@@ -25,6 +25,8 @@ int m;
     }
   }
 }
+
+  // Estas funciones de teclado, aunque sean locales, deben estar declaradas en el archivo principal
 void crot(){ //cambio de sentido de la rotación
   if (key == 'q'){
   rot -= 0.2;
@@ -32,6 +34,8 @@ void crot(){ //cambio de sentido de la rotación
     rot +=0.01;
   }
 }
+
+  // Estas funciones de teclado, aunque sean locales, deben estar declaradas en el archivo principal
 void back1(){
 if (key =='w'){
  background(random(100,150),0,0);
