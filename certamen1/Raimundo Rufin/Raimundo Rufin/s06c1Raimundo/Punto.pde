@@ -1,15 +1,13 @@
-
-
 class Punto {
   // variables de posicion y multiplicador para definir sentido inicial del objeto
   float x, y, mult;
-  
+
   int opa = 0; // variable de opacidad
 
 
   // direccion y velocidad incial del punto con numeros aleatorios enteros
-  int vx = (int)random(3, 5);
-  int vy = (int)random(3, 5);
+  int vx = (int) random(3, 5);
+  int vy = (int) random(3, 5);
 
   //Constructor
   Punto(float px, float py, float pmult) {
@@ -20,11 +18,11 @@ class Punto {
     mult = pmult;
 
 
-    vx*=pmult;
-    vy*=pmult;
+    vx *= pmult;
+    vy *= pmult;
   }
 
-  /* ejecuta 3 metodos simultaneamente,sirve para no tener 
+  /* ejecuta 3 metodos simultaneamente,sirve para no tener
    que ejecutar cada metodo por separado por cada objeto de la clase*/
   void run() {
     create();
@@ -40,10 +38,10 @@ class Punto {
     point(x, y);
   }
 
-  //mueve el punto no visible 
+  //mueve el punto no visible
   void move() {
-    x+=vx;
-    y+=vy;
+    x += vx;
+    y += vy;
   }
 
   //hace que dicho punto rebote con los bordes
@@ -51,7 +49,7 @@ class Punto {
     if (x > width || x < 0) {
       vx *= -1;
     }
-    if (y > height|| y < 0) {
+    if (y > height || y < 0) {
       vy *= -1;
     }
   }
