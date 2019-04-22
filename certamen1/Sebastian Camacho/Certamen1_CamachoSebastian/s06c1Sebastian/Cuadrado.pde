@@ -12,7 +12,7 @@ class Cuadrado {
 
 
 
-  void Rotacion1() {
+  void rotacion1() {
     translate(x, y);// Da el origen de los cuadrados con los valores anteriormente mencionados
 
     for (int i=0; i<num; i++) { //For asignado para definir la cantidad de cuadrados queremos que hayan
@@ -23,7 +23,7 @@ class Cuadrado {
       rect(0, 0, sz, sz); // Cuadrado con valores distintos segun sz (Escala de los cuadrados)
       if (i%2==1) { //Condicion que cambia los colores de las lineas dependiendo de los valores en i
         stroke(0);
-        
+
       } else {
         stroke(255);
       }
