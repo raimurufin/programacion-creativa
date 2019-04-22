@@ -1,3 +1,7 @@
+/*
+ No existe una descripción general del código escrito, qué se verá, ni cómo se utiliza.
+*/
+
 Spiral s;
 int n;
 int m;
