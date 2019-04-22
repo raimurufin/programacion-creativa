@@ -1,4 +1,4 @@
-float t; //variable para definir la velocidad de rotación de la figura. 
+float t; //variable para definir la velocidad de rotación de la figura.
 float r; // variable que define la razón de proporción de crecimiento de las figuras.
 float c; // Color de la línea.
 float g; // Grosor de la línea
@@ -7,22 +7,22 @@ float v; //Cantidad de vertices de la figura.
 float a;
 
 class triangulo {
-  { 
+  {
     r = 1;
   }
 
   void movimiento (float s, float v ) {
 
-    // Se declara el inicio de la figura 
+    // Se declara el inicio de la figura
     beginShape();
     // Declaramos la disposición de las figuras a través del canvas así como también la cantidad de vértices de las mismas, esto  indicado con la variable "v"
-    for (a = s*t; a < TWO_PI + s*t; a += TWO_PI/v) { 
+    for (a = s*t; a < TWO_PI + s*t; a += TWO_PI/v) {
       // aquí se declara desde donde comienza a formarse la figura y el movimietno del vértice, es decir, cómo se va agrandando a través del canvas.
       vertex(r*cos(a)+height/2, r*sin(a)+width/2);
     }
     endShape(CLOSE);
 
-    r *= 1.03; // Aquí se define la razón de crecimiento de la figura. 
+    r *= 1.03; // Aquí se define la razón de crecimiento de la figura.
     t += 1; // Se define el valor de t para que la figura esté siempre en movimiento.
 
     // Se declara que la figura se comience a hacer nuevamente desde el centro del canvas.
@@ -31,8 +31,8 @@ class triangulo {
     }
   }
 
-  //La siguiente función define las características del triangulo, como el grosor de la linea y el color de la misma. 
-  void caracteristicas (int c, int g) { 
+  //La siguiente función define las características del triangulo, como el grosor de la linea y el color de la misma.
+  void caracteristicas (int c, int g) {
     noFill();
     strokeWeight(g);
     stroke (c, mouseY, mouseX, 255); //Al mover el mouse a lo largo del canvas, el color de la figura camiba.
