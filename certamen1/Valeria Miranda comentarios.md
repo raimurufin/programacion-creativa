@@ -1,4 +1,4 @@
-Alumno: Renata Vásquez 
+Alumno: Valeria Miranda
 
 Comentarios de la entrega:
 
@@ -8,14 +8,5 @@ Existe un uso del control de versión básico, se puede mejorar en el nombre y d
 
 **Es un programa que cumple con todos los requerimientos, pero aún es necesario ahondar más en cuanto a la la forma de describir y analizar la obra, la modularidad de métodos, separar posición, de elemento gráfico.**
 
-Pasar variables directas sin pasar por los parámetros es importante que no ocurra, por ejemplo 
+Se puede por ejemplo tener un método que solo dibuje y sea posible cambiar los tamaños, y otro método que cambie la posición, y otro que modifique la dirección de rotación
 
-```java
-void caracteristicas (int c, int g) { 
-    noFill();
-    strokeWeight(g);
-    stroke (c, mouseY, mouseX, 255); //Al mover el mouse a lo largo del canvas, el color de la figura camiba.
-  }
-```
-
-Las variables mouseX, y mouseY, deben entrar como parámetros junto con c, g
