@@ -1,3 +1,6 @@
+/*
+ No existe una descripción general del código escrito, qué se verá, ni cómo se utiliza.
+*/
 Celular celula;
 
 int nbCelula = 0;
