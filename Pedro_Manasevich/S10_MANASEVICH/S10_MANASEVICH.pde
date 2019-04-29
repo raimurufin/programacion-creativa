@@ -14,30 +14,32 @@ Conectar con una linea objetos con mismo indice
 
 */
 
-float x;//variable X
-float y;//variable Y
-int n;//variable N
+Objeto[] c; //declarar lista c de clase
+Objeto[] d; //declarar lista d de clase
+
+void setup() {//Setup
+  size(600, 600);//Tamaño Canvas
 
 
-Objeto[] obj, ob2;//variable arrays
-
-
-void setup(){//Setup
-size(500,500);
-fill(random(255),random(0),random(255));//Relleno
-obj = new Objeto[6];
-ob2 = new Objeto[6];
-
-  for (int i=0; i<obj.length; i++) {
-    obj[i] = new Objeto(i,width/3,map(i,0,5,height/5,4*height/5));
-    ob2[i] = new Objeto(i,2*width/3,map(i,0,5,height/5,4*height/5));
+  c = new Objeto[6]; //C
+  d = new Objeto[6];//D
 }
-}
+void draw() {
+  background(255);//Color Fondo
 
-void draw(){//Draw
-  background(0);
-  for (int i=0; i<obj.length; i++){
-    obj[i].display();
-    ob2[i].display();
+  for (int i = 0; i < c.length; i++) {
+    c[i] = new Objeto(width/3, map(i, 0, 5, height/5, height*4/5), i); //llama objeto
+    d[i] = new Objeto(width*2/3, map(i, 0, 5, height/5, height*4/5), i); //llama objeto
+    c[i].figura();
+    d[i].figura();
+
+  }
+
+  for (int i = 0; i < c.length; i++) {//For loops
+    for (int j = 0; j < c.length; j++) {
+      if (c[i].index == d[j].index) {//condicional
+        c[i].con(d[j]);
+      }
+    }
   }
 }

@@ -1,25 +1,25 @@
-//Clase
-class Objeto{
+class Objeto {
 
+  int index;
+  float x, y;
 
-//Variable
-int i;
-float x;
-float y;
+  Objeto(float x, float y, int index) {
 
+    this.index = index;
+    this.x = x;
+    this.y = y;
 
-//Contructor
-Objeto(int i,float x, float y){// variables
-  this.i=i;
-  this.x=x;
-  this.y=y;
-}
+  }
 
-//metodo
-void display(){
-  ellipse(x,y,40,40);//Ellipse
-}
+  void figura(){//metodo
+    fill(0);//relleno
+    ellipse(x,y,30,30); //ellipse
 
+  }
 
-
+  void con(Objeto a){//metodo
+    stroke(0);//color linea
+    strokeWeight(4);//grosor linea
+    line(a.x, a.y, x, y);//linea
+  }
 }
