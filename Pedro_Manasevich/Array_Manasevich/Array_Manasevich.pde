@@ -20,7 +20,7 @@ void draw() {
   }
   if (mousePressed) {
     for (int i=0; i < x.length; i++) {//For loop
-      rect(x[i], mouseY, 30, 30); //rect
+      rect(x[i], y[i], 30, 30); //rect
 
     }
   }
