@@ -52,22 +52,22 @@ Para la primera clase se debe tener:
 
 **15/04** Comunicación entre objetos, Listas fijas
 
-**22/04** Listas fijas, Listas flexibles
+**22/04** Listas fijas
 
-**29/04** **Entrega tarea 2**, Tipografía
+**29/04** Listas fijas
 
-**06/05** Tipografía
+**06/05** Listas fijas, Bases de datos creación y lectura
 
-**13/05** **Entrega tarea3** Bases de datos creación y lectura
+13/05 **Sin clases: Licencia Médica**, **Presentación de Certamen 2**
 
-**20/05** Bases de datos creación y lectura
+20/05 **Sin clases: sandwish**
 
 **27/05** **Certamen 2** 
 
-**03/06*** Librerías
+**03/06** Listas flexibles
 
-**10/06*** Librerías, P5.js
+**10/06** Visualización de datos, **Presentación Examen**
 
-**17/06** **Entrega tarea 5**, P5.js
+**17/06** **Entrega tarea 5**, Visualización de datos
 
 **24/06** **Examen**
