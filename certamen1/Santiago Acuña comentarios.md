@@ -1,3 +1,3 @@
-Alumno:Santiago Acuña
+Alumno: Santiago Acuña
 
-En revisión
+No permite evaluación.
